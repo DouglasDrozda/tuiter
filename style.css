@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-container{
+  display: flex;
+  height: 100vh;
+}
+
+.body-container .left-side{
+  background-image: url(/lohp_1302x955.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.body-container .right-side{
+  display: flex;
+  background-color:black;
+  color: rgb(217, 217, 217);
+  align-items:center;
+
+}
+
+.body-container .left-side .logo-twitter{
+  padding: 0 40px;
+  max-width: 450px;
+}
+
+.logoTT{
+  width: 45px;
+}
+
+.body-container .right-side .main-conatainer{
+  padding: 30px;
+  
+}
+
+.body-container .right-side .main-conatainer .title{
+  margin: 48px 0;
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: -1.2px;
+}
+
+.body-container .right-side .main-conatainer .subtitle{
+ margin-bottom: 32px;
+ line-height: 36px;
+ font-size: 36px;
+ font-weight: 700;
+}
+
+.buttons-container{
+  display: flex;
+  
+}
+
+.buttons-container button{
+  padding: 0 32px;
+  max-width: 314px;
+  cursor: pointer;
+  border-width: 1px;
+  border-radius: 9999px;
+  min-height: 48px;
+  font-weight: 700;
+}
+
+.singup{
+  background-color: rgb(29, 161, 242);
+  color: white;
+}
+
+.login{
+  background-color: black;
+  border-color: rgb(29, 161, 242);
+  color: rgb(29, 161, 242);
+}
+
+/* resolução acima de 1000px */
+@media screen and (min-width: 1000px) {
+  .body-container .left-side{
+    height: 100vh;
+    flex-grow: 1;
+  }
+
+  .body-container .right-side{
+    height: 100vh;
+    width: 725px;
+  }
+
+  .buttons-container{
+    flex-direction: column;
+  }
+
+  .singup{
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  
+}
+
+/* resolução entre 1000px e 500px */
+@media screen and (max-width: 1000px) {
+  .body-container{
+   flex-direction: column-reverse;
+  }
+
+  .body-container .left-side{
+    height: 45%;
+    width: 100%;
+  }
+
+  .body-container .right-side{
+    height: 55%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .main-container{
+    max-width: 568px;
+  }
+
+  .singup{ 
+    margin: 0 15px;
+    width: 230px;
+  }
+
+  .login{
+    width: 230px;
+  }
+
+}
+
+/* resolução abaixo de 500px */
+@media screen and (max-width:500px) { 
+  .body-container .right-side .main-conatainer .title{
+    font-size: 40px;
+  }
+
+  .buttons-container{
+    flex-direction: column;
+    margin 0;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .singup{
+    margin: 15px;
+    width: 600px;
+  }
+
+  .login{
+    width: 600px;
+  }
+
+} 
