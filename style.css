@@ -140,19 +140,19 @@
     font-size: 40px;
   }
 
-  .buttons-container{
+  .buttons-container {
     flex-direction: column;
-    margin 0;
+    margin: 0;
     margin-bottom: 20px;
     align-items: center;
   }
 
-  .singup{
+  .singup {
     margin: 15px;
     width: 600px;
   }
 
-  .login{
+  .login {
     width: 600px;
   }
 
