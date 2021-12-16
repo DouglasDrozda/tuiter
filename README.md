@@ -9,4 +9,7 @@
 
 ## Sobre o Projeto
 
-Este projeto foi feito no inicio do meu curso da Trybe. Aplicando conhecimentos básicos sobre HTML e CSS.
+Este projeto foi feito no inicio do meu curso da Trybe.
+<br>
+<br>
+Aplicando conhecimentos básicos sobre HTML/CSS e página responsiva.
